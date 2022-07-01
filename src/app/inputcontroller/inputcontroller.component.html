@@ -1,0 +1,14 @@
+<div class="justify-center place-content-center text-center	">
+  <p class="text-center py-5">Add new Servers or blueprints!</p>
+  <label>Server Name</label>
+  <input type="text" class="border border-slate-300 rounded-md " [(ngModel)]="newServerName">
+  <p>{{newServerName}}</p>
+  <label>Server Content</label>
+  <input type="text" class="border border-slate-300 rounded-md" [(ngModel)]="newServerContent">
+  <p>{{newServerContent}}</p>
+  <br>
+  <button
+    class="rounded-full bg-amber-300 text-center p-3 "
+    (click)="onAddServer()">Add Server
+</button>
+</div>
